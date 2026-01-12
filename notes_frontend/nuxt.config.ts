@@ -2,6 +2,19 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
+
+  app: {
+    head: {
+      title: "Ocean Notes",
+      meta: [
+        { name: "description", content: "Local-first notes app with tags, search, autosave, and optional markdown preview." },
+        { name: "theme-color", content: "#2563EB" },
+      ],
+    },
+  },
+
+  css: ["~/assets/css/main.css"],
+
   nitro: {
     routeRules: {
       "/**": {
@@ -11,9 +24,10 @@ export default defineNuxtConfig({
       },
     },
   },
+
   vite: {
     server: {
-      host: '0.0.0.0',
+      host: "0.0.0.0",
       allowedHosts: true,
       port: 3000,
     },

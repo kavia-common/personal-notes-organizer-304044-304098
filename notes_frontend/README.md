@@ -1,75 +1,34 @@
-# Nuxt Minimal Starter
+# Ocean Notes (Nuxt)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A local-first notes app built with Nuxt 3. Notes are stored in your browser using `localStorage` (no backend).
 
-## Setup
+## Features
 
-Make sure to install dependencies:
+- Split layout: notes list (left) + editor/preview (right)
+- Create / edit / delete notes (with confirmation)
+- Search, tag filter, and sort (recently updated / title)
+- Autosave while typing
+- Optional Markdown preview (minimal built-in renderer)
+- Keyboard shortcuts:
+  - **Cmd/Ctrl+N**: new note
+  - **Cmd/Ctrl+S**: save (autosave is always on)
+- Responsive: stacks into a single column on smaller screens
+- Seed/demo notes are created on first run for preview
+
+## Development
+
+Install dependencies and start the dev server:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
+
+Then open: http://localhost:3000
 
 ## Production
 
-Build the application for production:
-
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
